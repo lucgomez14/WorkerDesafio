@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\Build\Common.props"/>
+  <PropertyGroup>
+    <RootNamespace>worker_application.Domain</RootNamespace>
+    <AssemblyName>worker_application.Domain</AssemblyName>
+    <Version>8.2.1</Version>
+  </PropertyGroup>
+</Project>

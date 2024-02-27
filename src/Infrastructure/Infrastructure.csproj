@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\Build\Common.props" />
+  <PropertyGroup>
+    <RootNamespace>worker_application.Infrastructure</RootNamespace>
+    <AssemblyName>worker_application.Infrastructure</AssemblyName>
+    <Version>8.2.1</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EventHandler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Andreani.ARQ.CQRS" Version="8.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
