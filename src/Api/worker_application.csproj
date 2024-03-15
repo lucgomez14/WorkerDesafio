@@ -4,10 +4,14 @@
     <Version>8.2.1</Version>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="appsetings.Staging.yml" />
     <None Remove="appsettings.Development.yml" />
     <None Remove="appsettings.yml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appsetings.Staging.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="appsettings.Development.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
